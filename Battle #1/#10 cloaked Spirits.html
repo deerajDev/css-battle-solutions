@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>#10 cloaked spirit</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+      }
+      .cloaked-container {
+        width: 75%;
+        height: 33%;
+        display: flex;
+      }
+
+      .circle {
+        border-radius: 50%;
+      }
+      .flex-centered {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .outer-square {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        top: -50%;
+      }
+      .inner-square {
+        width: 60px;
+        height: 60px;
+      }
+
+      .purple {
+        background-color: #62306d;
+      }
+      .yellow {
+        background-color: #f7ec7d;
+      }
+      .pink {
+        background-color: #aa445f;
+      }
+      .orange {
+        background-color: #e38f66;
+      }
+      .tower {
+        flex-grow: 1;
+        height: 100%;
+        position: relative;
+        top: -100%;
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container purple">
+      <div class="cloaked-container yellow">
+        <div class="flex-centered outer-square circle pink flex-centered">
+          <div
+            class="flex-centered inner-square circle orange flex-centered"
+          ></div>
+        </div>
+
+        <div class="tower yellow">
+          <div class="flex-centered outer-square circle orange flex-centered">
+            <div
+              class="flex-centered inner-square circle pink flex-centered"
+            ></div>
+          </div>
+        </div>
+        <div class="flex-centered outer-square circle pink flex-centered">
+          <div
+            class="flex-centered inner-square circle orange flex-centered"
+          ></div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </body>
+</html>
