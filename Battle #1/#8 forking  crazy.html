@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>#8 Forking crazy</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .blue-background {
+        background-color: #6592cf;
+      }
+      .navy-blue-background {
+        background-color: #060f55;
+      }
+      .main-container {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: flex-end;
+      }
+
+      .fork-container {
+        width: 200px;
+        height: 250px;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        position: relative;
+      }
+      .hot-dog {
+        width: 22%;
+        height: 56%;
+        background: #060f55;
+        border-radius: 10px;
+
+        position: relative;
+        top: -10px;
+      }
+
+      .gap {
+        background-color: #6592cf;
+      }
+
+      .fork-head {
+        flex-grow: 1;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 0 0 50% 50%;
+        position: relative;
+        display: flex;
+      }
+      .fork-handle {
+        width: 10%;
+        height: 20%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container blue-background">
+      <div class="fork-container">
+        <div class="fork-head navy-blue-background">
+          <div class="hot-dog"></div>
+          <div class="hot-dog gap"></div>
+          <div class="hot-dog"></div>
+          <div class="hot-dog gap"></div>
+          <div class="hot-dog"></div>
+          <div class="hot-dog gap"></div>
+          <div class="hot-dog"></div>
+        </div>
+        <div class="fork-handle navy-blue-background"></div>
+      </div>
+    </div>
+  </body>
+</html>
