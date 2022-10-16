@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+      }
+      .acid-rain-container {
+        width: 100%;
+        height: 100%;
+        background-color: #0b2429;
+        display: relative;
+      }
+      .yellow-color {
+        background-color: #f3ac3c;
+      }
+      .light-yellow {
+        background-color: #998235;
+      }
+      .square-box {
+        width: 30%;
+        height: 40%;
+        position: absolute;
+      }
+      .leaf {
+        border-radius: 50% 0 50% 50%;
+      }
+      .circle {
+        border-radius: 50%;
+      }
+      .first {
+        z-index: 3;
+        bottom: 10%;
+        left: 20%;
+      }
+      .second {
+        z-index: 2;
+        bottom: 30%;
+        left: 35%;
+      }
+      .third {
+        z-index: 1;
+        bottom: 50%;
+        left: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="acid-rain-container">
+      <div class="yellow-color square-box leaf first"></div>
+      <div class="light-yellow square-box leaf second"></div>
+      <div class="yellow-color square-box circle third"></div>
+    </div>
+  </body>
+</html>
